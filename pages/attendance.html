@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management - MSU Clubs Portal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/attendance.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Include sidebar -->
+        <aside class="dashboard-sidebar">
+            <!-- Sidebar content -->
+        </aside>
+
+        <main class="dashboard-main">
+            <nav class="dashboard-nav">
+                <div class="nav-left">
+                    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+                    <h2>Attendance Management</h2>
+                </div>
+                <div class="nav-right">
+                    <button class="btn-primary">
+                        <i class="fas fa-qrcode"></i> Generate QR Code
+                    </button>
+                    <button class="btn-secondary">
+                        <i class="fas fa-download"></i> Export
+                    </button>
+                </div>
+            </nav>
+
+            <div class="dashboard-content">
+                <div class="attendance-filters">
+                    <select class="event-select">
+                        <option>Select Event</option>
+                        <option>Python Workshop - Mar 25, 2024</option>
+                        <option>Data Analysis Session - Mar 20, 2024</option>
+                    </select>
+                    <div class="date-filter">
+                        <input type="date">
+                        <span>to</span>
+                        <input type="date">
+                    </div>
+                    <button class="btn-filter">Apply</button>
+                </div>
+
+                <div class="attendance-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <div class="stat-info">
+                            <h3>Total Attendees</h3>
+                            <p>45/60</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                        <div class="stat-info">
+                            <h3>Average Duration</h3>
+                            <p>1.8 hrs</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-percentage"></i></div>
+                        <div class="stat-info">
+                            <h3>Attendance Rate</h3>
+                            <p>75%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attendance-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Student ID</th>
+                                <th>Name</th>
+                                <th>Check-in Time</th>
+                                <th>Check-out Time</th>
+                                <th>Duration</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>R123456</td>
+                                <td>John Smith</td>
+                                <td>14:00</td>
+                                <td>16:00</td>
+                                <td>2 hrs</td>
+                                <td><span class="status present">Present</span></td>
+                                <td>
+                                    <button class="btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-icon"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <!-- More attendance rows -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html> 

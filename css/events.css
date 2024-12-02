@@ -1,0 +1,138 @@
+.events-page {
+    padding: 2rem 5%;
+    margin-top: 60px;
+}
+
+.events-header {
+    margin-bottom: 2rem;
+}
+
+.events-header h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.events-filter {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.events-filter input,
+.events-filter select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.events-filter input {
+    flex: 1;
+}
+
+.events-filter select {
+    width: 200px;
+}
+
+.events-timeline h2 {
+    color: var(--secondary-color);
+    margin: 2rem 0 1rem;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.event-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.event-date {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 60px;
+}
+
+.event-date .day {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.event-date .month {
+    display: block;
+    font-size: 0.8rem;
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-details {
+    padding: 1.5rem;
+}
+
+.event-details h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.event-club {
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.event-desc {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.event-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.event-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.event-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.event-card.past {
+    opacity: 0.8;
+}
+
+.event-card.past .event-date {
+    background: var(--secondary-color);
+}
+
+.event-card.past .event-btn {
+    background-color: var(--secondary-color);
+} 

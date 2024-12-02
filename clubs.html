@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs - MSU Clubs Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/clubs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/logo.png" alt="MSU Logo">
+            <span>MSU Clubs Portal</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="clubs.html" class="active">Clubs</a>
+            <a href="events.html">Events</a>
+            <a href="login.html" class="auth-btn">Login</a>
+            <a href="register.html" class="auth-btn">Register</a>
+        </div>
+    </nav>
+
+    <section class="clubs-page">
+        <div class="clubs-header">
+            <h1>MSU Clubs Directory</h1>
+            <div class="clubs-search">
+                <input type="text" placeholder="Search clubs...">
+                <select>
+                    <option value="">All Categories</option>
+                    <option value="academic">Academic</option>
+                    <option value="sports">Sports</option>
+                    <option value="cultural">Cultural</option>
+                    <option value="religious">Religious</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="clubs-grid">
+            <!-- Club Cards will be repeated -->
+            <div class="club-card">
+                <img src="assets/club1.jpg" alt="Data Science Club">
+                <div class="club-details">
+                    <h3>Data Science Club</h3>
+                    <p>Exploring the world of data analytics and machine learning</p>
+                    <div class="club-meta">
+                        <span><i class="fas fa-users"></i> 120 Members</span>
+                        <span><i class="fas fa-calendar"></i> Founded 2020</span>
+                    </div>
+                    <div class="club-tags">
+                        <span>Academic</span>
+                        <span>Technology</span>
+                    </div>
+                    <a href="#" class="join-btn">View Details</a>
+                </div>
+            </div>
+            <!-- More club cards -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: clubs@msu.ac.zw</p>
+                <p>Phone: +263 123 456 789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">About Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MSU Clubs Portal. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 

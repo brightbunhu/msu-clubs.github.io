@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - MSU Clubs Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/logo.png" alt="MSU Logo">
+            <span>MSU Clubs Portal</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="events.html" class="active">Events</a>
+            <a href="login.html" class="auth-btn">Login</a>
+            <a href="register.html" class="auth-btn">Register</a>
+        </div>
+    </nav>
+
+    <section class="events-page">
+        <div class="events-header">
+            <h1>Club Events</h1>
+            <div class="events-filter">
+                <input type="text" placeholder="Search events...">
+                <select>
+                    <option value="all">All Events</option>
+                    <option value="upcoming">Upcoming Events</option>
+                    <option value="past">Past Events</option>
+                </select>
+                <select>
+                    <option value="all">All Clubs</option>
+                    <option value="data-science">Data Science Club</option>
+                    <option value="debate">Debate Club</option>
+                    <!-- More clubs -->
+                </select>
+            </div>
+        </div>
+
+        <div class="events-timeline">
+            <h2>Upcoming Events</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">25</span>
+                        <span class="month">MAR</span>
+                    </div>
+                    <img src="assets/event1.jpg" alt="Tech Talk">
+                    <div class="event-details">
+                        <h3>Tech Talk 2024</h3>
+                        <p class="event-club">Data Science Club</p>
+                        <p class="event-desc">Join us for an exciting discussion on AI and Machine Learning.</p>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 2:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Main Hall</span>
+                        </div>
+                        <a href="#" class="event-btn">Learn More</a>
+                    </div>
+                </div>
+                <!-- More event cards -->
+            </div>
+
+            <h2>Past Events</h2>
+            <div class="events-grid">
+                <div class="event-card past">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">FEB</span>
+                    </div>
+                    <img src="assets/event2.jpg" alt="Hackathon">
+                    <div class="event-details">
+                        <h3>MSU Hackathon</h3>
+                        <p class="event-club">Programming Club</p>
+                        <p class="event-desc">24-hour coding challenge with amazing prizes.</p>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> All Day</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Computer Lab</span>
+                        </div>
+                        <a href="#" class="event-btn">View Gallery</a>
+                    </div>
+                </div>
+                <!-- More past event cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: clubs@msu.ac.zw</p>
+                <p>Phone: +263 123 456 789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">About Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MSU Clubs Portal. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 

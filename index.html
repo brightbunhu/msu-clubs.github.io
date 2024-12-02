@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSU Clubs Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/logo.png" alt="MSU Logo">
+            <span>MSU Clubs Portal</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="events.html">Events</a>
+            <a href="login.html" class="auth-btn">Login</a>
+            <a href="register.html" class="auth-btn">Register</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Past Events Slider -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide">
+                <img src="assets/event1.jpg" alt="Past Event 1">
+                <div class="slide-content">
+                    <h2>Data Science Club Hackathon</h2>
+                    <p>Amazing solutions presented by our talented students!</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <!-- More slides will be added dynamically -->
+        </div>
+        <div class="slider-controls">
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <div class="events-grid">
+            <div class="event-card">
+                <img src="assets/upcoming1.jpg" alt="Upcoming Event 1">
+                <div class="event-details">
+                    <h3>Tech Talk 2024</h3>
+                    <p class="date"><i class="far fa-calendar"></i> March 25, 2024</p>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Main Hall</p>
+                    <a href="#" class="event-btn">Learn More</a>
+                </div>
+            </div>
+            <!-- More event cards -->
+        </div>
+    </section>
+
+    <!-- Registered Clubs Section -->
+    <section class="clubs-section">
+        <h2>Our Clubs</h2>
+        <div class="clubs-grid">
+            <div class="club-card">
+                <img src="assets/club1.jpg" alt="Club 1">
+                <div class="club-details">
+                    <h3>Data Science Club</h3>
+                    <p>Exploring the world of data analytics and machine learning</p>
+                    <span class="member-count"><i class="fas fa-users"></i> 120 Members</span>
+                    <a href="#" class="join-btn">View Details</a>
+                </div>
+            </div>
+            <!-- More club cards -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: clubs@msu.ac.zw</p>
+                <p>Phone: +263 123 456 789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">About Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MSU Clubs Portal. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

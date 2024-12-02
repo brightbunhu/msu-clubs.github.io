@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Leader Dashboard - MSU Clubs Portal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <img src="../assets/logo.png" alt="MSU Logo">
+                <h3>Leader Dashboard</h3>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#" class="active"><i class="fas fa-home"></i> Overview</a>
+                <a href="../pages/members.html"><i class="fas fa-users"></i> Members</a>
+                <a href="#"><i class="fas fa-calendar-alt"></i> Events</a>
+                <a href="../templates/letter-templates.html"><i class="fas fa-envelope"></i> Letters</a>
+                <a href="#"><i class="fas fa-clipboard-list"></i> Attendance</a>
+                <a href="#"><i class="fas fa-chart-line"></i> Analytics</a>
+                <a href="#"><i class="fas fa-file-download"></i> Reports</a>
+                <a href="../forms/club-registration.html"><i class="fas fa-plus-circle"></i> Register New Club</a>
+                <a href="#"><i class="fas fa-cog"></i> Settings</a>
+            </nav>
+
+            <!-- My Clubs Section -->
+            <div class="my-clubs">
+                <h4>My Clubs</h4>
+                <div class="club-list">
+                    <a href="#" class="active">Data Science Club</a>
+                    <a href="#">Programming Club</a>
+                    <a href="#">AI Research Club</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <nav class="dashboard-nav">
+                <div class="nav-left">
+                    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+                    <h2>Data Science Club</h2>
+                </div>
+                <div class="nav-right">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">5</span>
+                    </div>
+                    <div class="user-profile">
+                        <img src="../assets/leader-avatar.jpg" alt="Leader">
+                        <span>Jane Smith</span>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="dashboard-content">
+                <!-- Quick Actions -->
+                <div class="quick-actions">
+                    <button class="action-btn"><i class="fas fa-plus"></i> New Event</button>
+                    <button class="action-btn"><i class="fas fa-envelope"></i> Write Letter</button>
+                    <button class="action-btn"><i class="fas fa-clipboard-check"></i> Take Attendance</button>
+                    <button class="action-btn"><i class="fas fa-file-download"></i> Download Register</button>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <div class="stat-info">
+                            <h3>Active Members</h3>
+                            <p>120</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+                        <div class="stat-info">
+                            <h3>Events This Month</h3>
+                            <p>4</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-user-check"></i></div>
+                        <div class="stat-info">
+                            <h3>Average Attendance</h3>
+                            <p>85%</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="stat-info">
+                            <h3>Pending Letters</h3>
+                            <p>3</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <!-- Attendance Register -->
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Recent Attendance</h3>
+                            <div class="header-actions">
+                                <select class="event-select">
+                                    <option>Python Workshop - 25 Mar</option>
+                                    <option>Data Analysis Session - 20 Mar</option>
+                                </select>
+                                <button class="btn-primary">Export</button>
+                            </div>
+                        </div>
+                        <div class="attendance-list">
+                            <table class="attendance-table">
+                                <thead>
+                                    <tr>
+                                        <th>Student ID</th>
+                                        <th>Name</th>
+                                        <th>Time In</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>R123456</td>
+                                        <td>John Smith</td>
+                                        <td>14:00</td>
+                                        <td><span class="status present">Present</span></td>
+                                    </tr>
+                                    <!-- More attendance rows -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Letters Status -->
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Letters Status</h3>
+                            <button class="btn-primary">New Letter</button>
+                        </div>
+                        <div class="letters-list">
+                            <div class="letter-item">
+                                <div class="letter-type request">Request</div>
+                                <div class="letter-info">
+                                    <h4>Venue Request</h4>
+                                    <p>For Python Workshop</p>
+                                    <div class="letter-meta">
+                                        <span class="status pending">Pending Patron</span>
+                                        <span class="timestamp">2 hours ago</span>
+                                    </div>
+                                </div>
+                                <button class="btn-view">View</button>
+                            </div>
+                            <!-- More letter items -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Events -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Upcoming Events</h3>
+                        <div class="header-actions">
+                            <button class="btn-filter">Filter</button>
+                            <button class="btn-primary">Add Event</button>
+                        </div>
+                    </div>
+                    <div class="events-timeline">
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="day">25</span>
+                                <span class="month">MAR</span>
+                            </div>
+                            <div class="event-info">
+                                <h4>Python Workshop</h4>
+                                <p>Introduction to Data Analysis</p>
+                                <div class="event-meta">
+                                    <span><i class="far fa-clock"></i> 2:00 PM</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Lab 3</span>
+                                    <span><i class="fas fa-users"></i> 45 Registered</span>
+                                </div>
+                            </div>
+                            <div class="event-actions">
+                                <button class="btn-edit"><i class="fas fa-edit"></i></button>
+                                <button class="btn-view">Details</button>
+                            </div>
+                        </div>
+                        <!-- More event items -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html> 

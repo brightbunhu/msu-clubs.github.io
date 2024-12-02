@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Analytics - MSU Clubs Portal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/analytics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Add Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Include sidebar -->
+        <aside class="dashboard-sidebar">
+            <!-- Sidebar content -->
+        </aside>
+
+        <main class="dashboard-main">
+            <nav class="dashboard-nav">
+                <div class="nav-left">
+                    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+                    <h2>Club Analytics</h2>
+                </div>
+                <div class="nav-right">
+                    <select class="time-range">
+                        <option>Last 7 Days</option>
+                        <option>Last 30 Days</option>
+                        <option>Last 3 Months</option>
+                        <option>Last Year</option>
+                    </select>
+                    <button class="btn-export">
+                        <i class="fas fa-download"></i> Export Report
+                    </button>
+                </div>
+            </nav>
+
+            <div class="dashboard-content">
+                <!-- Key Metrics -->
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-icon"><i class="fas fa-users"></i></div>
+                        <div class="metric-info">
+                            <h3>Total Members</h3>
+                            <p>120</p>
+                            <span class="trend positive">+15% <i class="fas fa-arrow-up"></i></span>
+                        </div>
+                    </div>
+                    <!-- More metric cards -->
+                </div>
+
+                <!-- Charts Section -->
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <h3>Member Growth</h3>
+                        <canvas id="memberGrowthChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Event Attendance</h3>
+                        <canvas id="attendanceChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Activity Distribution</h3>
+                        <canvas id="activityChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Engagement Metrics -->
+                <div class="engagement-section">
+                    <h3>Member Engagement</h3>
+                    <div class="engagement-table">
+                        <!-- Engagement data -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/analytics.js"></script>
+</body>
+</html> 

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Club - MSU Clubs Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/club-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/logo.png" alt="MSU Logo">
+            <span>MSU Clubs Portal</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="clubs.html" class="active">Clubs</a>
+            <a href="events.html">Events</a>
+            <a href="login.html" class="auth-btn">Login</a>
+            <a href="register.html" class="auth-btn">Register</a>
+        </div>
+    </nav>
+
+    <div class="club-header">
+        <div class="club-profile">
+            <div class="profile-picture">
+                <img src="assets/club-logo.png" alt="Data Science Club Logo">
+            </div>
+            <div class="club-info">
+                <h1>Data Science Club</h1>
+                <div class="club-stats">
+                    <span><i class="fas fa-users"></i> 120 Members</span>
+                    <span><i class="fas fa-calendar"></i> Founded 2020</span>
+                    <span><i class="fas fa-star"></i> Academic</span>
+                </div>
+                <p class="club-tagline">Exploring the world of data analytics and machine learning</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="club-content">
+        <div class="club-main">
+            <section class="club-description">
+                <h2>About Us</h2>
+                <p>The Data Science Club at MSU is dedicated to exploring the fascinating world of data analytics, machine learning, and artificial intelligence. We provide a platform for students to learn, collaborate, and apply data science concepts to real-world problems.</p>
+                
+                <div class="club-objectives">
+                    <h3>Our Objectives</h3>
+                    <ul>
+                        <li>Foster learning and collaboration in data science</li>
+                        <li>Organize workshops and training sessions</li>
+                        <li>Connect students with industry professionals</li>
+                        <li>Work on real-world data science projects</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="club-events">
+                <div class="events-header">
+                    <h2>Events</h2>
+                    <div class="events-tabs">
+                        <button class="tab active">Upcoming</button>
+                        <button class="tab">Past Events</button>
+                    </div>
+                </div>
+                
+                <div class="events-content">
+                    <div class="upcoming-events">
+                        <div class="event-card">
+                            <div class="event-date">
+                                <span class="day">25</span>
+                                <span class="month">MAR</span>
+                            </div>
+                            <div class="event-details">
+                                <h3>Tech Talk 2024</h3>
+                                <p class="event-desc">Join us for an exciting discussion on AI and Machine Learning.</p>
+                                <div class="event-meta">
+                                    <span><i class="far fa-clock"></i> 2:00 PM</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Main Hall</span>
+                                </div>
+                                <a href="#" class="event-btn">Register</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="past-events hidden">
+                        <div class="event-card past">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">FEB</span>
+                            </div>
+                            <div class="event-details">
+                                <h3>Data Science Hackathon</h3>
+                                <p class="event-desc">48-hour hackathon focused on solving real-world data problems.</p>
+                                <div class="event-meta">
+                                    <span><i class="far fa-clock"></i> All Day</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Computer Lab</span>
+                                </div>
+                                <a href="#" class="event-btn">View Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <aside class="club-sidebar">
+            <div class="leadership-box">
+                <h3>Club Leadership</h3>
+                <div class="patron-card">
+                    <img src="assets/patron.jpg" alt="Club Patron">
+                    <div class="patron-info">
+                        <h4>Dr. John Doe</h4>
+                        <p class="role">Club Patron</p>
+                        <p class="department">Department of Computer Science</p>
+                    </div>
+                </div>
+
+                <div class="leaders-list">
+                    <div class="leader-item">
+                        <img src="assets/president.jpg" alt="Club President">
+                        <div class="leader-info">
+                            <h4>Jane Smith</h4>
+                            <p class="role">President</p>
+                        </div>
+                    </div>
+                    <div class="leader-item">
+                        <img src="assets/secretary.jpg" alt="Club Secretary">
+                        <div class="leader-info">
+                            <h4>Mike Johnson</h4>
+                            <p class="role">Secretary</p>
+                        </div>
+                    </div>
+                    <div class="leader-item">
+                        <img src="assets/treasurer.jpg" alt="Club Treasurer">
+                        <div class="leader-info">
+                            <h4>Sarah Williams</h4>
+                            <p class="role">Treasurer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="join-club">
+                <h3>Join Our Club</h3>
+                <p>Become a member to participate in club activities and events.</p>
+                <button class="join-btn">Register Now</button>
+            </div>
+
+            <div class="club-contact">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-envelope"></i> datascience@clubs.msu.ac.zw</p>
+                <p><i class="fab fa-whatsapp"></i> Join WhatsApp Group</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: clubs@msu.ac.zw</p>
+                <p>Phone: +263 123 456 789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">About Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MSU Clubs Portal. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 

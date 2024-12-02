@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Templates - MSU Clubs Portal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/letters.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="letter-container">
+        <div class="letter-sidebar">
+            <h3>Letter Types</h3>
+            <nav class="letter-nav">
+                <a href="#" class="active">Permission Letter</a>
+                <a href="#">Request Letter</a>
+                <a href="#">Thank You Letter</a>
+                <a href="#">Event Proposal</a>
+                <a href="#">Custom Letter</a>
+            </nav>
+        </div>
+
+        <div class="letter-content">
+            <div class="letter-header">
+                <h2>Create New Letter</h2>
+                <div class="letter-actions">
+                    <button class="btn-save"><i class="fas fa-save"></i> Save Draft</button>
+                    <button class="btn-preview"><i class="fas fa-eye"></i> Preview</button>
+                    <button class="btn-submit">Submit for Approval</button>
+                </div>
+            </div>
+
+            <div class="letter-form">
+                <div class="form-group">
+                    <label>Letter Type</label>
+                    <select required>
+                        <option>Permission Letter</option>
+                        <option>Request Letter</option>
+                        <option>Thank You Letter</option>
+                        <option>Event Proposal</option>
+                        <option>Custom Letter</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>To</label>
+                    <input type="text" placeholder="Recipient's Title and Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="Letter Subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Content</label>
+                    <div class="editor-toolbar">
+                        <button><i class="fas fa-bold"></i></button>
+                        <button><i class="fas fa-italic"></i></button>
+                        <button><i class="fas fa-list"></i></button>
+                        <button><i class="fas fa-link"></i></button>
+                    </div>
+                    <textarea rows="12" placeholder="Letter content..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Attachments</label>
+                    <div class="file-upload">
+                        <input type="file" multiple>
+                        <span><i class="fas fa-cloud-upload-alt"></i> Drop files here or click to upload</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Approval Flow</label>
+                    <div class="approval-flow">
+                        <div class="flow-item">
+                            <span class="flow-number">1</span>
+                            <span>Club Leader</span>
+                        </div>
+                        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                        <div class="flow-item">
+                            <span class="flow-number">2</span>
+                            <span>Club Patron</span>
+                        </div>
+                        <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                        <div class="flow-item">
+                            <span class="flow-number">3</span>
+                            <span>SDO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="letter-templates">
+            <h3>Templates</h3>
+            <div class="template-list">
+                <div class="template-item">
+                    <h4>Venue Request</h4>
+                    <p>Standard template for requesting venue access</p>
+                    <button class="btn-use">Use Template</button>
+                </div>
+                <div class="template-item">
+                    <h4>Event Permission</h4>
+                    <p>Template for event permission requests</p>
+                    <button class="btn-use">Use Template</button>
+                </div>
+                <!-- More templates -->
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

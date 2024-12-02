@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - MSU Clubs Portal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <img src="../assets/logo.png" alt="MSU Logo">
+                <h3>Student Dashboard</h3>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#" class="active"><i class="fas fa-home"></i> Overview</a>
+                <a href="../pages/explore-clubs.html"><i class="fas fa-search"></i> Explore Clubs</a>
+                <a href="../pages/student-events.html"><i class="fas fa-calendar-alt"></i> My Events</a>
+                <a href="../forms/club-registration.html"><i class="fas fa-plus-circle"></i> Join New Club</a>
+                <a href="../pages/certificates.html"><i class="fas fa-certificate"></i> Certificates</a>
+                <a href="../templates/letter-templates.html"><i class="fas fa-envelope"></i> Club Letters</a>
+                <a href="../pages/settings.html"><i class="fas fa-cog"></i> Settings</a>
+            </nav>
+
+            <!-- My Clubs Section -->
+            <div class="my-clubs">
+                <h4>My Clubs</h4>
+                <div class="club-list">
+                    <a href="../pages/club-detail.html?club=data-science" class="active">Data Science Club</a>
+                    <a href="../pages/club-detail.html?club=photography">Photography Club</a>
+                    <a href="../pages/club-detail.html?club=chess">Chess Club</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <nav class="dashboard-nav">
+                <div class="nav-left">
+                    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+                    <h2>My Clubs Overview</h2>
+                </div>
+                <div class="nav-right">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">2</span>
+                    </div>
+                    <div class="user-profile">
+                        <img src="../assets/student-avatar.jpg" alt="Student">
+                        <span>Robert Student</span>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="dashboard-content">
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <div class="stat-info">
+                            <h3>Clubs Joined</h3>
+                            <p>3</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+                        <div class="stat-info">
+                            <h3>Upcoming Events</h3>
+                            <p>5</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="stat-info">
+                            <h3>Certificates</h3>
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-star"></i></div>
+                        <div class="stat-info">
+                            <h3>Achievement Points</h3>
+                            <p>150</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <!-- My Events -->
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>My Events</h3>
+                            <button class="btn-filter">Filter</button>
+                        </div>
+                        <div class="events-list">
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="day">25</span>
+                                    <span class="month">MAR</span>
+                                </div>
+                                <div class="event-info">
+                                    <h4>Python Workshop</h4>
+                                    <p>Data Science Club</p>
+                                    <div class="event-meta">
+                                        <span><i class="far fa-clock"></i> 2:00 PM</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> Lab 3</span>
+                                    </div>
+                                </div>
+                                <button class="btn-view">View Details</button>
+                            </div>
+                            <!-- More event items -->
+                        </div>
+                    </div>
+
+                    <!-- Club Activities -->
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Recent Club Activities</h3>
+                            <a href="#" class="view-all">View All</a>
+                        </div>
+                        <div class="activities-list">
+                            <div class="activity-item">
+                                <div class="activity-icon"><i class="fas fa-trophy"></i></div>
+                                <div class="activity-info">
+                                    <h4>Won First Place</h4>
+                                    <p>Hackathon Competition</p>
+                                    <span class="timestamp">2 days ago</span>
+                                </div>
+                            </div>
+                            <!-- More activity items -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recommended Clubs -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Recommended Clubs</h3>
+                        <a href="#" class="view-all">Explore More</a>
+                    </div>
+                    <div class="clubs-grid">
+                        <div class="club-card">
+                            <img src="../assets/ai-club.jpg" alt="AI Club">
+                            <div class="club-info">
+                                <h4>AI Research Club</h4>
+                                <p>Explore artificial intelligence and machine learning</p>
+                                <div class="club-meta">
+                                    <span><i class="fas fa-users"></i> 85 members</span>
+                                    <span><i class="fas fa-star"></i> 4.8</span>
+                                </div>
+                                <button class="btn-join">Join Club</button>
+                            </div>
+                        </div>
+                        <!-- More club cards -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html> 

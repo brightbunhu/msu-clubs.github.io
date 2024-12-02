@@ -1,0 +1,99 @@
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.certificate-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.certificate-preview {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.certificate-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.certificate-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.certificate-preview:hover .certificate-overlay {
+    opacity: 1;
+}
+
+.btn-download,
+.btn-share {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-download {
+    background: var(--primary-color);
+}
+
+.btn-share {
+    background: var(--secondary-color);
+}
+
+.btn-download:hover,
+.btn-share:hover {
+    transform: scale(1.05);
+}
+
+.certificate-info {
+    padding: 1.5rem;
+}
+
+.certificate-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.certificate-info p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.certificate-meta {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.certificate-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+} 

@@ -1,0 +1,57 @@
+.clubs-page {
+    padding: 2rem 5%;
+    margin-top: 60px;
+}
+
+.clubs-header {
+    margin-bottom: 2rem;
+}
+
+.clubs-header h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.clubs-search {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.clubs-search input,
+.clubs-search select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.clubs-search input {
+    flex: 1;
+}
+
+.clubs-search select {
+    width: 200px;
+}
+
+.club-meta {
+    display: flex;
+    gap: 1rem;
+    margin: 0.5rem 0;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.club-tags {
+    margin: 0.5rem 0;
+}
+
+.club-tags span {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: var(--light-gray);
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+} 

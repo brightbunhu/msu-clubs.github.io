@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Clubs - MSU Clubs Portal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/explore-clubs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Include sidebar -->
+        <aside class="dashboard-sidebar">
+            <!-- Sidebar content -->
+        </aside>
+
+        <main class="dashboard-main">
+            <nav class="dashboard-nav">
+                <div class="nav-left">
+                    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+                    <h2>Explore Clubs</h2>
+                </div>
+            </nav>
+
+            <div class="dashboard-content">
+                <!-- Search and Filter -->
+                <div class="explore-tools">
+                    <div class="search-filter">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search clubs...">
+                        </div>
+                        <select class="category-filter">
+                            <option value="all">All Categories</option>
+                            <option value="academic">Academic</option>
+                            <option value="sports">Sports</option>
+                            <option value="cultural">Cultural</option>
+                            <option value="religious">Religious</option>
+                        </select>
+                    </div>
+                    <div class="filter-tags">
+                        <span class="filter-tag active">All</span>
+                        <span class="filter-tag">Popular</span>
+                        <span class="filter-tag">New</span>
+                        <span class="filter-tag">Academic</span>
+                        <span class="filter-tag">Sports</span>
+                    </div>
+                </div>
+
+                <!-- Clubs Grid -->
+                <div class="clubs-grid">
+                    <!-- Club Card -->
+                    <div class="club-card">
+                        <div class="club-banner">
+                            <img src="../assets/club1.jpg" alt="Data Science Club">
+                            <div class="club-category">Academic</div>
+                        </div>
+                        <div class="club-content">
+                            <div class="club-logo">
+                                <img src="../assets/club-logo1.png" alt="Club Logo">
+                            </div>
+                            <h3>Data Science Club</h3>
+                            <p>Exploring the world of data analytics and machine learning</p>
+                            <div class="club-stats">
+                                <span><i class="fas fa-users"></i> 120 Members</span>
+                                <span><i class="fas fa-star"></i> 4.8</span>
+                            </div>
+                            <div class="club-tags">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>Analytics</span>
+                            </div>
+                            <a href="../pages/club-detail.html?club=data-science" class="btn-view">View Club</a>
+                        </div>
+                    </div>
+                    <!-- More club cards -->
+                </div>
+
+                <!-- Featured Clubs -->
+                <div class="featured-section">
+                    <h3>Featured Clubs</h3>
+                    <div class="featured-clubs">
+                        <!-- Featured club cards -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html> 
